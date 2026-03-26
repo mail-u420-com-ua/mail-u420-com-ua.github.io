@@ -1,0 +1,21 @@
+#logo {
+	background-image: url(logo.png?v=545c0e91ce9a37a41eb97a1641855615);
+}
+
+#login-button {
+	background-color: #00a1e1;
+}
+#login-button:hover, #login-button:focus {
+	background-color: #00b3fa;
+}
+
+
+/*Retina images*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+	#logo {
+		background-image: url(logo@2x.png?v=545c0e91ce9a37a41eb97a1641855615);
+		background-size:209px 45px;
+	}
+}

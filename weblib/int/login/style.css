@@ -1,0 +1,203 @@
+body,html {
+	font-family:"Segoe UI",Ubuntu,"lucida grande",tahoma,sans-serif !important;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+body {
+	background: url(./img/background.png?v=545c0e91ce9a37a41eb97a1641855615) repeat scroll 5px 5px transparent;
+}
+
+#up-spacer{
+	height:25%
+}
+
+#main-container {
+	margin-left:auto;
+	margin-right:auto;
+	width:325px;
+	position:relative
+}
+
+#top {
+	background: url(./img/top.png?v=545c0e91ce9a37a41eb97a1641855615) no-repeat scroll 0 0 transparent;
+	height:15px;
+}
+
+#body-container {
+	background: url(./img/middle.png?v=545c0e91ce9a37a41eb97a1641855615) repeat-y scroll 0 0 transparent;
+}
+#body-container table {
+	margin: 0;
+	padding: 0;
+}
+#body-container table, #body-container tr, #body-container td {
+	margin: 0;
+	padding: 0;
+}
+
+#bottom {
+	background: url(./img/bottom.png?v=545c0e91ce9a37a41eb97a1641855615) no-repeat scroll 0 0 transparent;
+	height:15px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+	#top {
+		background-image: url(./img/top@2x.png?v=545c0e91ce9a37a41eb97a1641855615);
+		background-size: 325px 15px;
+	}
+	#body-container {
+		background-image: url(./img/middle@2x.png?v=545c0e91ce9a37a41eb97a1641855615);
+		background-size: 325px 6px;
+	}
+	#bottom {
+		background-image: url(./img/bottom@2x.png?v=545c0e91ce9a37a41eb97a1641855615);
+		background-size: 325px 15px;
+	}
+}
+
+#logo {
+	width:325px;
+	background-repeat:no-repeat;
+	background-position: center;
+ 	height:80px;
+}
+
+/* product name is shown when CSS is not available */
+#logo #product-name {
+	display:none
+}
+
+#container {
+	margin: 0px;
+	padding: 20px 30px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], #login-button {
+	/* some properies for submit are overridden in product-specific CSS */
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-appearance: none;
+	outline: 0 none;
+	border: 1px solid #CCCCCC;
+	transition: border 0.2s ease 0s;
+	border-radius: 3px;
+	color: black;
+	font-size: 13px;
+	height: 32px;
+	margin-bottom: 6px;
+	padding: 0 6px;
+	width: 260px;
+}
+
+input:focus {
+	border-color: #999999;
+}
+
+#login-button {
+	color: white;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	margin-left: 1px;
+	margin-bottom: 0px;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0, rgba(0, 0, 0, 0.1) 100%);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0, rgba(0, 0, 0, 0.1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.1) 0, rgba(0, 0, 0, 0.1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0, rgba(0, 0, 0, 0.1) 100%);
+	cursor: pointer;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+
+.oldIE input[type="text"], .oldIE input[type="password"], .oldIE input[type="email"], .oldIE #login-button {
+	line-height: 30px;
+}
+.nph #login-button {
+	margin-top: 15px;  /* because of labels above inputs instead placeholders */
+}
+.oldIE.lessIE8 .textbox {
+	width: 245px;
+}
+.oldIE #login-button {
+	border-color: black;
+}
+
+.textbox::-webkit-input-placeholder, .textbox::-moz-placeholder {
+	color: gray;
+}
+:-ms-input-placeholder {
+	color: gray !important;
+}
+
+label {
+	color: gray;
+	display: block;
+	font-size: 11px;
+	margin-bottom: 2px;
+}
+
+.hidden{
+	display: none;
+}
+
+#hiddenfields-container {
+	display: none;
+}
+
+#error-message {
+	color: #bb0d00;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0 0 0;
+	width: 260px;
+	font-size: 11px;
+}
+#error-message h2 {
+	font-size: 13px;
+	margin: 0;
+}
+#error-message p {
+	margin-bottom: 0;
+}
+#error-message ul {
+	margin: 0;
+	padding-left: 25px;
+}
+
+#remember {
+	display: none;
+	height: 22px;
+	line-height: 22px;
+	margin: 16px 0 0 0;
+	text-align: center;
+	vertical-align: middle;
+}
+#checkbox-label {
+	font-size: 13px;
+	display:inline;
+	margin: 0 0 0 5px;
+}
+#remember-checkbox:hover {
+	cursor: pointer;
+}
+#checkbox-label:hover {
+	cursor: pointer;
+	color: #555555;
+}
+
+#upper-message-container, #lower-message-container, #additional-message-container {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+#upper-message-container {
+	font-weight: bold;
+}
+
+#lower-message-container {
+	color: gray;
+	margin-top: 16px;
+}
